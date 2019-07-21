@@ -12,14 +12,14 @@ import random
 
 class Card(object):
     """Represents a standard playing card.
-    
+
     Attributes:
       suit: integer 0-3
       rank: integer 1-13
     """
 
-    suit_names = ["Spades", "Clubs", "Diamons", "Hearts"]
-    rank_names = [None, "Ace", "2", "3", "4", "5", "6", "7", 
+    suit_names = ["Spades", "Clubs", "Diamonds", "Hearts"]
+    rank_names = [None, "Ace", "2", "3", "4", "5", "6", "7",
               "8", "9", "10", "Jack", "Queen", "King"]
 
     def __init__(self, suit=0, rank=2):
@@ -48,7 +48,7 @@ class Deck(object):
     Attributes:
       cards: list of Card objects.
     """
-    
+
     def __init__(self):
         self.cards = []
         for suit in range(4):
@@ -97,14 +97,14 @@ class Deck(object):
 
 class Hand(Deck):
     """Represents a hand of playing cards."""
-    
+
     def __init__(self, label=''):
         self.cards = []
         self.label = label
 
 
 def find_defining_class(obj, method_name):
-    """Finds and returns the class object that will provide 
+    """Finds and returns the class object that will provide
     the definition of method_name (as a string) if it is
     invoked on obj.
 
