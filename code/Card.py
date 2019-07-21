@@ -18,7 +18,7 @@ class Card(object):
       rank: integer 1-13
     """
 
-    suit_names = ["Clubs", "Diamonds", "Hearts", "Spades"]
+    suit_names = ["Spades", "Clubs", "Diamons", "Hearts"]
     rank_names = [None, "Ace", "2", "3", "4", "5", "6", "7", 
               "8", "9", "10", "Jack", "Queen", "King"]
 
